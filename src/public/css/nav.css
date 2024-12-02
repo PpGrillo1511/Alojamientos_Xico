@@ -1,0 +1,244 @@
+.nav-item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+}
+.home-section {
+    position: absolute;
+    height: 56.07%;
+    width: 51.82%;
+    top: 23.36%;
+    left: 24.26%;
+    letter-spacing: 0.2em;
+    line-height: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.item-top {
+    position: absolute;
+    height: 4.67%;
+    width: 100%;
+    top: 95.33%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    background-color: #000;
+}
+.item-bottom {
+    position: absolute;
+    height: 4.67%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 95.33%;
+    left: 0%;
+    background-color: #000;
+}
+.home-container {
+    position: absolute;
+    height: 20.98%;
+    width: 4.72%;
+    top: 39.22%;
+    right: 58.14%;
+    bottom: 39.8%;
+    left: 37.14%;
+    cursor: pointer;
+}
+.rental-section {
+    position: absolute;
+    width: 62.84%;
+    top: 23.36%;
+    left: 19.11%;
+    letter-spacing: 0.2em;
+    line-height: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+}
+.item-overlay {
+    position: absolute;
+    height: 4.67%;
+    width: 100%;
+    top: 95.33%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    background-color: #333;
+}
+.rectangle-container {
+    position: absolute;
+    height: 4.67%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 95.33%;
+    left: 0%;
+    background-color: #333;
+}
+.rental-container {
+    position: absolute;
+    height: 20.98%;
+    width: 4.72%;
+    top: 39.22%;
+    right: 49.72%;
+    bottom: 39.8%;
+    left: 45.56%;
+}
+.suggestions-section {
+    position: absolute;
+    height: 52.38%;
+    width: 67.23%;
+    top: 23.81%;
+    left: 16.59%;
+    letter-spacing: 0.2em;
+    line-height: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+}
+.child-overlay1 {
+    position: absolute;
+    height: 4.76%;
+    width: 100%;
+    top: 95.24%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    background-color: #333;
+}
+.child-overlay2 {
+    position: absolute;
+    height: 4.76%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 95.24%;
+    left: 0%;
+    background-color: #333;
+}
+.suggestions-container {
+    position: absolute;
+    height: 20.59%;
+    width: 8.06%;
+    top: 40.2%;
+    right: 39.16%;
+    bottom: 39.22%;
+    left: 52.78%;
+}
+.reviews-section {
+    position: absolute;
+    height: 57.14%;
+    width: 62.79%;
+    top: 19.05%;
+    left: 19.06%;
+    letter-spacing: 0.2em;
+    line-height: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+}
+.reviews-container {
+    position: absolute;
+    height: 20.59%;
+    width: 5.56%;
+    top: 39.22%;
+    right: 29.3%;
+    bottom: 40.2%;
+    left: 65.14%;
+}
+.about-section {
+    position: absolute;
+    height: 52.38%;
+    width: 70%;
+    top: 23.81%;
+    left: 16.17%;
+    letter-spacing: 0.2em;
+    line-height: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+}
+.about-container {
+    position: absolute;
+    height: 20.59%;
+    width: 10.42%;
+    top: 40.2%;
+    right: 14.24%;
+    bottom: 39.22%;
+    left: 75.35%;
+}
+.nav-bar {
+    width: 100%;
+    position: relative;
+    height: 102px;
+    text-align: left;
+    font-size: 12px;
+    color: #000;
+    font-family: 'Rethink Sans';
+}
+.logo-icon {
+    position: absolute;
+    height: 61.76%;
+    width: 12.57%;
+    top: 19.61%;
+    right: 82.43%;
+    bottom: 18.63%;
+    left: 5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.logo-icon:hover {
+    transform: scale(1.1);
+}
+
+@keyframes colorTransition {
+    0% {
+        background-color: #000;
+    }
+    100% {
+        background-color: #FAB33D;
+    }
+}
+
+.home-container:hover .item-top {
+    animation: colorTransition 0.3s ease-in-out forwards;
+}
+.home-container:hover .item-bottom {
+    animation: colorTransition 0.3s ease-in-out forwards;
+}
+
+.rental-container:hover .item-overlay {
+    animation: colorTransition 0.3s ease-in-out forwards;
+}
+.rental-container:hover .rectangle-container {
+    animation: colorTransition 0.3s ease-in-out forwards;
+}
+
+.suggestions-container:hover .child-overlay1 {
+    animation: colorTransition 0.3s ease-in-out forwards;
+}
+.suggestions-container:hover .child-overlay2 {
+    animation: colorTransition 0.3s ease-in-out forwards;
+}
+
+.reviews-container:hover .child-overlay1 {
+    animation: colorTransition 0.3s ease-in-out forwards;
+}
+.reviews-container:hover .child-overlay2 {
+    animation: colorTransition 0.3s ease-in-out forwards;
+}
+
+.about-container:hover .child-overlay1 {
+    animation: colorTransition 0.3s ease-in-out forwards;
+}
+.about-container:hover .child-overlay2 {
+    animation: colorTransition 0.3s ease-in-out forwards;
+}
