@@ -1,0 +1,221 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  /* Encabezado */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f8f8f8;
+  }
+
+ 
+  /* Sección principal */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+  }
+  
+  .hero-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text h1 span {
+    color: #080808de;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .hero-image img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+  }
+  /* Sección Información */
+.informacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #f8f8f8;
+}
+
+.informacion-imagenes {
+  display: grid;
+  grid-template-columns: repeat(2, 150px); /* Dos columnas con ancho fijo de 150px */
+  grid-template-rows: 100px 100px; /* Altura fija para las filas */
+  gap: 10px; /* Espaciado entre las imágenes */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: center; /* Centra las imágenes verticalmente */
+}
+
+.informacion-imagenes img:nth-child(3) {
+  grid-column: 1 / span 2; /* La tercera imagen ocupa ambas columnas */
+}
+
+.informacion-imagenes img {
+  width: 100%; /* Ocupa el ancho de su celda */
+  height: 100%; /* Ocupa la altura de su celda */
+  object-fit: cover; /* Ajuste del contenido sin deformar */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+
+.informacion-texto {
+  max-width: 800px;
+}
+
+.informacion-texto h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.informacion-texto p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.informacion-texto button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.informacion-texto button:hover {
+  background-color: #0056b3;
+}
+
+/* Sección Otras Rentas */
+.otras-rentas {
+  padding: 40px;
+  background-color: #fff;
+}
+
+.otras-rentas h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.rentas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.renta {
+  position: relative;
+}
+
+.renta img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.renta p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+/* Sección Contáctanos */
+.contactanos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.formulario {
+  flex: 1;
+  max-width: 500px;
+  margin-right: 20px;
+}
+
+.formulario h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaa;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.imagen-contacto {
+  flex: 1;
+  max-width: 500px;
+}
+
+.imagen-contacto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+  

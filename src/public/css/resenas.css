@@ -1,0 +1,86 @@
+/* Contenedor general */
+.reseñas-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Título principal */
+  .reseñas-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .reseñas-container h1 strong {
+    color: #000;
+  }
+  
+  /* Subtítulo del formulario */
+  .reseñas-formulario h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo del formulario */
+  .reseñas-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Campos de entrada */
+  .reseñas-formulario input,
+  .reseñas-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Estilo del área de texto */
+  .reseñas-formulario textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  /* Efecto al enfocar */
+  .reseñas-formulario input:focus,
+  .reseñas-formulario textarea:focus {
+    border-color: #333;
+  }
+  
+  /* Botón de envío */
+  .reseñas-formulario button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reseñas-formulario button:hover {
+    background-color: #444;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .reseñas-container h1 {
+      font-size: 2rem;
+    }
+  
+    .reseñas-formulario h2 {
+      font-size: 1.2rem;
+    }
+  }
+  

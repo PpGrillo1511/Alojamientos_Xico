@@ -1,0 +1,89 @@
+/* Contenedor general */
+.rentas-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Título */
+  .rentas-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .rentas-title strong {
+    color: #000;
+  }
+  
+  /* Estilo de cada item */
+  .renta-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo de las imágenes */
+  .renta-image {
+    width: 300px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    flex-shrink: 0; /* Evita que las imágenes se reduzcan */
+    border-radius: 8px 0 0 8px; /* Esquinas redondeadas solo en la parte izquierda */
+  }
+  
+  /* Contenido del texto */
+  .renta-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .renta-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .renta-content p {
+    margin: 15px 0;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .renta-button {
+    align-self: start;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .renta-button:hover {
+    background-color: #444;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .renta-item {
+      flex-direction: column;
+    }
+  
+    .renta-image {
+      width: 100%; /* Imagen ocupa todo el ancho */
+      height: 200px; /* Mantiene la altura fija */
+    }
+  }
+  
