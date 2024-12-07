@@ -17,6 +17,7 @@
     line-height: 12px;
     text-transform: uppercase;
     display: inline-block;
+
 }
 .item-top {
     position: absolute;
@@ -41,13 +42,20 @@
 .home-container {
     position: absolute;
     height: 20.98%;
-    width: 4.72%;
+    width: 6.2%;
     top: 39.22%;
     right: 58.14%;
     bottom: 39.8%;
     left: 37.14%;
     cursor: pointer;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: flex-start; /* Mueve el texto hacia la izquierda */
+    padding-left: 10px; /* Opcional: ajusta la separación desde el borde izquierdo */
+    text-transform: uppercase;
+
 }
+
 .rental-section {
     position: absolute;
     width: 62.84%;
@@ -82,7 +90,7 @@
 .rental-container {
     position: absolute;
     height: 20.98%;
-    width: 4.72%;
+    width: 5.72%;
     top: 39.22%;
     right: 49.72%;
     bottom: 39.8%;
@@ -123,7 +131,7 @@
 .suggestions-container {
     position: absolute;
     height: 20.59%;
-    width: 8.06%;
+    width: 10.06%;
     top: 40.2%;
     right: 39.16%;
     bottom: 39.22%;
@@ -142,22 +150,24 @@
     cursor: pointer;
 }
 .reviews-container {
-    position: absolute;
+    position: relative;
     height: 20.59%;
-    width: 5.56%;
+    width: 7.56%;
     top: 39.22%;
     right: 29.3%;
     bottom: 40.2%;
     left: 65.14%;
+    color: #000;
+
 }
 .about-section {
     position: absolute;
     height: 52.38%;
     width: 70%;
     top: 23.81%;
-    left: 16.17%;
+    left: 10.17%;
     letter-spacing: 0.2em;
-    line-height: 12px;
+    line-height: 15px;
     text-transform: uppercase;
     display: inline-block;
     cursor: pointer;
@@ -165,7 +175,7 @@
 .about-container {
     position: absolute;
     height: 20.59%;
-    width: 10.42%;
+    width: 16.4%;
     top: 40.2%;
     right: 14.24%;
     bottom: 39.22%;
@@ -208,10 +218,10 @@
     }
 }
 
-.home-container:hover .item-top {
+.home-container:hover .child-overlay1 {
     animation: colorTransition 0.3s ease-in-out forwards;
 }
-.home-container:hover .item-bottom {
+.home-container:hover .child-overlay2 {
     animation: colorTransition 0.3s ease-in-out forwards;
 }
 
@@ -241,4 +251,21 @@
 }
 .about-container:hover .child-overlay2 {
     animation: colorTransition 0.3s ease-in-out forwards;
+}
+
+.home-container a,
+.about-container a,
+.rental-container a,
+.suggestions-container a,
+.reviews-container a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Mantiene el color del texto */
+}
+
+.home-container a:hover,
+.about-container a:hover,
+.rental-container a:hover,
+.suggestions-container a:hover,
+.reviews-container a:hover {
+    text-decoration: none; /* Asegura que el subrayado no aparezca al pasar el mouse */
 }

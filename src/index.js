@@ -10,7 +10,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Cargar las variables de entorno
-dotenv.config({ path: "./var.env" });
+dotenv.config({ path: "./.env" });  // Asegúrate de que la ruta sea "./.env"
 
 // Inicializar Express
 const app = express();
@@ -25,11 +25,10 @@ app.use(express.static(path.join(__dirname, "public")));
 // Middleware para manejar datos en formato JSON
 app.use(express.json());
 
-// Configurar las rutas principales
 app.use("/", router);
 
 // Iniciar el servidor
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;  
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en: http://localhost:${PORT}`);
 });

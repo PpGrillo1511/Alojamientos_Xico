@@ -24,4 +24,5 @@ router.get("/resenas", (req, res) => {
   res.render("resenas", { title: "rese" });
 });
 
+
 export default router;

@@ -5,6 +5,7 @@
     padding: 20px;
     font-family: Arial, sans-serif;
     text-align: center;
+    
   }
   
   /* Título principal */
@@ -83,4 +84,7 @@
       font-size: 1.2rem;
     }
   }
-  
+  footer{
+    margin-top: -100px; /* Ajusta el valor según necesites más o menos espacio */
+
+  }
